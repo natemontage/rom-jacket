@@ -1,0 +1,1 @@
+for /f "tokens=* delims= " %%a in ("%GBC%\dirlist.set"') do mkdir "%GBC%\net\%%~a"

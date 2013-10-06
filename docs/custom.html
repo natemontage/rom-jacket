@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head></head>
+<title>ROM-JACKET HELP DOCUMENTATION</title>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<link href="ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<style type="text/css">
+SUBMENUZ {
+	font-size: 24px;
+	font-weight: bolder;
+	color: #33C;
+	text-decoration: underline;
+}
+TOPIC {
+	color: #000;
+}
+.topic {
+	font-weight: bolder;
+	color: #000;
+}
+</style>
+
+
+<body>
+<div id="header-wrap">
+		 <nav>
+	<ul>
+		<li><a href="start.html">Home</a></li>
+		
+    <li><a href="help.html">Help</a>
+        <ul>
+	</ul>
+    </li>
+    </ul>
+</nav>
+</div>
+      <p><span class="CenteredBlue">Custom Consoles &amp; Emulators</span></p>
+      <p></p>
+<h3>• If you wish to use a different emulator for a console or have a console not identified by RoM-Jacket, a simple gui wizard is provided to assist in creating proper command-line instructions.</h3>
+      <blockquote>
+        <p>&nbsp;</p>
+        <p class="BUTTONLABEL">Run from Emulator Directory</p>
+      </blockquote>
+      <p>Most emulators should not use this option, however some emulators require that the emulator be called from its directory An example of how the launcher works with this option ON: </p>
+      <p class="CAVEATS">..\Rom Name&gt;cd C:\Emulators\Emulator&quot;</p>
+      <p class="CAVEATS">..\Emulator&gt;Emulator.exe&quot; &quot;C:\Games\Console\Console Name\Rom Name\Rom Name.ext&quot;</p>
+      <blockquote>
+        <p class="BUTTONLABEL">&nbsp;</p>
+        <p class="BUTTONLABEL">Full-Path/ROM</p>
+      </blockquote>
+      <p>Most often, emulators require the full path of the rom including the extension when launching a rom: </p>
+      <p class="CAVEATS">&quot;\..\Emulator.exe&quot; -option &quot;C:\Games\Console\Custom Console Name\Rom Name\Rom.ext&quot;</p>
+      <p>Emulators often use simply the name of the file without the path extension included when launching. In this case use &quot;ROM&quot;. </p>
+      <p class="CAVEATS">&quot;..\Emulator.exe&quot; -option RomName</p>
+      <p>&nbsp;</p>
+      <blockquote>
+        <p class="BUTTONLABEL">Extensions</p>
+      </blockquote>
+      <p>By selecting yes with the &quot;ROM&quot; option you can change the command to:</p>
+      <p class="CAVEATS">&quot;..\Emulator.exe&quot; -option &quot;RomName.ext&quot;</p>
+      <p>&nbsp;</p>
+      <blockquote>
+        <p class="BUTTONLABEL">Config Files</p>
+      </blockquote>
+      <p>Enter the name of the emulator's configuration file. Wildcards and paths are accepted.</p>
+      <p>If the configuration file is stored in the same folder as the emulator's executable, RoM-Jacket will copy it to each rom's folder upon exit allowing you to retain the settings on a per-rom basis.</p>
+      <p class="CAVEATS">Users may enter a path, however it should be noted that custom RoM-Jacket launchers will not create folders</p>
+      <p>&nbsp;</p>
+      <blockquote>
+        <p class="BUTTONLABEL">Options/Arguments</p>
+      </blockquote>
+      <p>The custom emulator and console-template use a very basic structure that let you specify how a rom is launched:</p>
+      <p>&nbsp;</p>
+      <p class="CAVEATS"><strong>&quot;...CustomPath\CustomEmulator.exe&quot; </strong><em>options</em><strong> &quot;ROM&quot; </strong>arguments</p>
+      <p>&nbsp;</p>
+<p>Options are given after the emulator and before the <em>ROM</em>. Arguments are given after the <em>ROM</em>. The switches  are emulator specific. Consult your emulator's help/manual..</p>
+    </div>
+  </div>
+  <br />
+  <hr />
+  <strong><span class="CAVEATS">The Paradigm:</span></strong>
+  <blockquote>
+    <p class="CAVEATS"><strong>&quot;Processing&quot;</strong></p>
+    <p class="CAVEATS">After roms have been sorted they must be &quot;processed&quot;. &nbsp;Rom-Jacket will create a launcher, emulator-configuration file/s, and joystick profiles for each rom in your library. &nbsp;This processing may take several minutes depending on the size of your library. *mame, Atomiswave, Naomi, and many Sega Genesis, PCEngine/TurboGrafx 16/SuperGrafx and CPS-I/II/III games will be assigned nice names for your convienence.*</p>
+  </blockquote>
+  <p>&nbsp;</p>
+  <blockquote>
+    <p class="CAVEATS"><strong>Launchers</strong></p>
+    <p class="CAVEATS">Generally, launchers follow this procedure:</p>
+    <blockquote>
+      <p class="CAVEATS">1. Defines the locations.</p>
+      <p class="CAVEATS">2. Overwrites the emulator's configuraion files with the rom's configurations.</p>
+      <p class="CAVEATS">3. Loads the rom's joystick profiles.</p>
+      <p class="CAVEATS">4. Defines the rom.</p>
+      <p class="CAVEATS">5. Launches the emulator against the rom and waits until the emulator exits.</p>
+      <blockquote>
+        <p class="CAVEATS"><strong>If you are launching through a RJ-Enabled Frontend</strong>:</p>
+        <p class="CAVEATS">The Frontend will minimize and pause until the rom has exited and then unpause and restore itself.</p>
+      </blockquote>
+      <p class="CAVEATS">6. Copies the configuration files back to the rom's directory.</p>
+      <p class="CAVEATS">7. Reloads the joystick profile for the frontend.</p>
+      <p class="CAVEATS">8. Terminates the launcher.</p>
+    </blockquote>
+  </blockquote>
+  <p class="CAVEATS"><strong>Caveats:</strong></p>
+  <blockquote>
+    <p class="CAVEATS">Large Libraries may take a LONG time to process. </p>
+  </blockquote>
+</div>
+</body>
+</html>

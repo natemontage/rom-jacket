@@ -1,0 +1,95 @@
+for /f "tokens=* delims= " %%a in ('dir /s/b/a-d-h "*.zip"') do (
+SET /A VARNUM=12
+SET FILN=
+SET FILCNT=
+SET FILNORM
+SET ZIPCURL=
+SET ARCN=
+SET ARCF=
+SET ARCE=
+set ZIPA=%%~nxa
+set ZIPN=%%~dpnxa
+"%SEVENZIP%" l -slt "%%~dpnxa">"%GBC%\tmp.ini"
+CALL :ALLPROC
+CALL :ZIPMOVE
+)
+del /q "%GBC%\zipextr.ini"
+del /q "%GBC%\tmp.ini"
+exit /b
+
+:ZIPMOVE
+for /f "tokens=1,2 delims=:" %%a in ('type "%GBC%\zipextr.ini"') do (
+set ARCN=%%~a
+set ARCF=%%~nxa
+set ARCE=%%~xa
+call "%GBC%\matcharcext.bat">>"%GBC%\logs\matcharcext.log"
+)
+exit /b
+
+
+:ALLPROC
+CALL :NAMEME
+SET /A FILNORM=(%FILN%-9)/15
+SET /A FILCNT=(%FILN%-9)/15
+EXIT /B
+
+:GLOBAL
+SET /A VARNUM+=15
+if %FILCNT% GEQ 1 CALL :GETME
+set /A FILCNT+=-1
+if %FILCNT% LEQ 0 goto exit /b
+goto :GLOBAL
+
+:NAMEME
+for /f %%a in ('Find /V /C "@#@$" ^< "%GBC%\tmp.ini"') do set /A FILN=%%a
+exit /b
+
+:GETME
+if "%FILNORM%" NEQ "%FILCNT%" set /A VARNUM+=15
+
+set urlNthL=%VARNUM%
+SET /A urlNthL -= 1
+CALL :ZIPC2_LGrab
+call :ZIPSET
+exit /b
+
+:ZIPC2_LGrab
+FOR /F "tokens=2 delims==" %%a IN ('MORE /E +%urlNthL% "%GBC%\tmp.ini"') DO (
+SET ZIPCURL=%%~a
+goto :EOF
+)
+
+:ZIPSET
+for /f "tokens=* delims= " %%a in ("%ZIPCURL%") do set ARCN=%%~a
+for /f "tokens=* delims= " %%a in ("%ZIPCURL%") do set ARCF=%%~nxa
+for /f "tokens=* delims= " %%a in ("%ZIPCURL%") do set ARCE=%%~xa
+CALL :ARCSET
+exit /b
+
+:ARCSET
+if "%ARCE%"=="" exit /b
+if "%ARCE%"==".txt" exit /b
+if "%ARCE%"==".xml" exit /b
+if "%ARCE%"==".ini" exit /b
+if "%ARCE%"==".cfg" exit /b
+if "%ARCE%"==".jpg" exit /b
+if "%ARCE%"==".png" exit /b
+if "%ARCE%"==".html" exit /b
+if "%ARCE%"==".htm" exit /b
+if "%ARCE%"==".nfo" exit /b
+if "%ARCE%"==".zip" exit /b
+if "%ARCE%"==".rar" exit /b
+if "%ARCE%"==".7z" exit /b
+if "%ARCE%"==".iso" exit /b
+if "%ARCE%"==".img" exit /b
+if "%ARCE%"==".cdi" exit /b
+if "%ARCE%"==".bin" exit /b
+if "%ARCE%"==".rom" exit /b
+if "%ARCE%"==".cue" exit /b
+if "%ARCE%"==".ccd" exit /b
+if "%ARCE%"==".gdi" exit /b
+if "%ARCE%"==".nrg" exit /b
+if "%ARCE%"==".md5" exit /b
+if "%ARCE%"==".mdf" exit /b
+if "%ARCE%"==".mds" exit /b
+echo.%ARCN%:>>"%GBC%\zipextr.ini"

@@ -1,0 +1,26 @@
+biosnds7.rom: 1280F0D5:
+biosnds9.rom: 2AB23573:
+firmware 2006-01-21.nds: 01D2B9E8:
+firmware 2006-02-20.nds: A82CB6A6:
+firmware.bin: 945F9DC9:
+firmware.nds: 34A169E1:
+firmware14d.ds.gba: 343EA6F9:
+firmware14d.nds: DDC677F9:
+firmware_10a.ds.gba: 491BD35A:
+firmware_10a.nds: 734477D6:
+firmware_11.ds.gba: EA9A1D30:
+firmware_11.nds: 98ADE713:
+firmware_13a.ds.gba: FCD7E15D:
+firmware_13a.nds: 2CD94BB1:
+firmware_14b.ds.gba: 532764E3:
+firmware_14b.nds: B48A644D:
+flashme - NDS-FW-V6.nds: FC1FD958:
+flashme v4 fix.ds.gba: 0C2B79C8:
+flashme v4.ds.gba: 9606CDC5:
+flashme v7.nds: A4FEA840:
+flashme_Lite_final.nds: 597F2B69:
+flashme_Lite_final_stealth.nds: 0D8B19AE:
+flashme_stealth - NDS-FW-V6.nds: DFAFF4F7:
+flashme_stealth v7.nds: 19AF919B:
+installer.nds: 87F6D64C:
+noflashme v4.ds.gba: 3B320FDC:

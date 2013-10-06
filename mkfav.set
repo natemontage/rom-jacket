@@ -1,0 +1,13 @@
+Sub CreateLinkFile ( LinkTargetPath, LinkDescription, LinkFileName )
+ Dim wshShell, oShellLink, fso, strLinkFilenameAndPath
+ Set fso = CreateObject( "Scripting.FileSystemObject" )
+ Set wshShell = CreateObject( "WScript.Shell" )
+ strLinkFilenameAndPath = wshShell.ExpandEnvironmentStrings ("%USERPROFILE%") & "\Links\" & LinkFileName
+  If Not fso.FileExists ( strLinkFilenameAndPath ) Then
+  Set oShellLink = wshShell.CreateShortcut( strLinkFilenameAndPath )
+   oShellLink.TargetPath = LinkTargetPath
+   oShellLink.Description = LinkDescription
+   oShellLink.WindowStyle = "1"
+   oShellLink.Save
+ End If
+End Sub

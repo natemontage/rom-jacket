@@ -1,0 +1,1 @@
+"%GBC%\fart.exe" "%GBC%\net\%EXECT%\%NEOCD%\raine32_sdl.cfg" [ROMPTH] "[ROMPTH]"

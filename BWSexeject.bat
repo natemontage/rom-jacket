@@ -1,0 +1,1 @@
+"%GBC%\fart.exe" "%GBC%\net\%EXECT%\%BWS%\%MEDN%*.cfg" [ROMPTH] "[ROMPTH]"

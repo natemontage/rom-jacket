@@ -1,0 +1,43 @@
+[ConfigDisplayFont]
+Font Name=Tahoma
+Font Size=10
+Font Color=16776960
+Font Bold=0
+Font Italic=0
+Font Underline=0
+Font StrikeOut=0
+[Mp3InfoLabel]
+Top=712
+Left=151
+Width=722
+Height=24
+[NextMp3Image]
+Top=100
+Left=100
+Width=100
+Height=100
+[PageNoDisplayFont]
+Font Name=Times New Roman
+Font Size=14
+Font Color=16776960
+Font Bold=0
+Font Italic=0
+Font Underline=0
+Font StrikeOut=0
+[Mp3DisplayFont]
+Font Name=Times New Roman
+Font Size=14
+Font Color=65535
+Font Bold=0
+Font Italic=0
+Font Underline=0
+Font StrikeOut=0
+[ConfigBackwardImage]
+Top=0
+Left=0
+Width=0
+Height=0
+[ConfigAnimation]
+Enable=1
+Delay=250
+Kind=1

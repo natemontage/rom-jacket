@@ -1,0 +1,28 @@
+CHCP 1252
+MODE CON: COLS=15 LINES=1
+TITLE LAUNCHER
+
+pushd "%~dp0"
+SET EMUL=[EMUL]
+SET EMUZ=[EMUZ]
+SET XPADDER=[XPD]
+SET DAMVAR=[DAMVAR]
+set GAMDIR=%CD%
+SET EMUDIR=%EMUL:~0,2%
+[XFG]copy /Y "[CFG]" "%EMUL%"
+[DSP]displayswitch /internal
+[XPT] for /f "tokens=* delims=" %%a in ('dir /B /A-D "*.xpadderprofile"') do cmd /c "%XPADDER%" /m "%CD%\%%~na1" "%CD%\%%~na2"
+%EMUDIR%
+[DMT]cmd /c "%DAMVAR%" -unmount scsi, 0
+for /f "tokens=* delims=" %%a in ('dir /B /A-D "%GAMDIR%\*.[EXT]"') do (
+set ROM=%%~na
+CALL :RUN
+)
+:RUN
+[DMT]"%DAMVAR%" -mount scsi, 0, "[ROM]"
+start /wait "" "%EMUZ%.exe" [OPT] "[ROM]" [ARGS]
+[XFG]copy "%EMUL%\[CFG]" "%CD%"
+[DSP]displayswitch /extend
+[XPT]  cmd /c "%XPADDER%" /m MediaCenter nolayout2
+[DMT]cmd /c "%DAMVAR%" -unmount scsi, 0
+taskkill /F /IM cmd.exe

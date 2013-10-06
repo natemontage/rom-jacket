@@ -1,0 +1,1 @@
+"%GBC%\fart.exe" "Bliss.ini" [ROMFILE] "%CSTM%.int"

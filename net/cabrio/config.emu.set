@@ -1,0 +1,7 @@
+    <emulator>
+      <name>[EMUL]</name>
+      <display-name>[EMUL]</display-name>
+      <executable>[BATCH]</executable>
+	   <directory>[BATCHPATH]</directory>
+    </emulator>
+	

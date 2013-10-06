@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head></head>
+<title>ROM-JACKET HELP DOCUMENTATION</title>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<link href="ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<style type="text/css">
+SUBMENUZ {
+	font-size: 24px;
+	font-weight: bolder;
+	color: #33C;
+	text-decoration: underline;
+}
+TOPIC {
+	color: #000;
+}
+.topic {
+	font-weight: bolder;
+	color: #000;
+}
+</style>
+
+
+<body>
+<div id="header-wrap">
+		 <nav>
+	<ul>
+		<li><a href="start.html">Home</a></li>
+		
+    <li><a href="help.html">Help</a>
+        <ul>
+	</ul>
+    </li>
+    </ul>
+</nav>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span class="BUTTONLABEL"><u>Select</u></span></p>
+<p class="topic">• This menu allows the user to configure games and consoles. </p>
+<p><span class="CenteredBlue">Folder Generation</span></p>
+<div class="TabbedPanelsContent">
+  <p><span class="CenteredBlue">Consolidate vs. Individuate</span></p>
+  <blockquote>
+    <p><span class="BUTTONLABEL">Consolidate:</span></p>
+  </blockquote>
+  <h3><br />
+    This will consolidate roms containing the same base-name and will group &quot;duplicate&quot; roms and multi-disc roms together. Effectively, this will help eliminate the need to scroll through many different versions of games in a library and will help wrangle multi-disc games. This is the preferred method of folder-generation for users wishing to tame their library and generate friendly-names for their frontend. </h3>
+  <p class="CAVEATS"><strong><em>Example:</em></strong></p>
+  <blockquote>
+    <p class="CAVEATS">..\Games\Console\Super System\Super Fun Game\ <br />
+      Super Fun Game (Disk 1).rom<br />
+      Super Fun Game (Disk 2).rom</p>
+  </blockquote>
+  <p>&nbsp;</p>
+  <strong><span class="CAVEATS"><em>Example</em>: </span></strong>
+  <blockquote>
+    <p class="CAVEATS">..\Games\Console\Super Fun System\Interesting Game\<br />
+      Interesting Game [ver 1a].zip<br />
+      Interesting Game (Game Developers).zip<br />
+      Interesting Game [!] (1992).zip</p>
+  </blockquote>
+  <p>&nbsp;</p>
+  <blockquote>
+    <p><span class="BUTTONLABEL">Individuate:</span></p>
+  </blockquote>
+  <h3><br />
+    This will simply give a folder to each rom found. This is the preferrable method of folder-generation for users wishing to configure the Hyperspin Frontend using proprietary xml tools. </h3>
+  <p class="CAVEATS"><strong><em>Example</em>:</strong></p>
+  <blockquote>
+    <p class="CAVEATS">..\Games\Console\Super System\Super Fun Game (Disk 1)\ <br />
+    </p>
+    <p class="CAVEATS">..\Games\Console\Super System\Super Fun Game (Disk 2)\<br />
+      Super Fun Game (Disk 2).rom</p>
+  </blockquote>
+  <strong><span class="CAVEATS"><em>Example: </em></span></strong>
+  <blockquote>
+    <p class="CAVEATS">..\Games\Console\Super Fun System\Interesting Game [ver 1a].\<br />
+      Interesting Game [ver 1a].zip</p>
+    <p class="CAVEATS">..\Games\Console\Super Fun System\Interesting Game (Developer Name)\<br />
+      Interesting Game (Game Developers).zip</p>
+    <p><span class="CAVEATS">..\Games\Console\Super Fun System\Interesting Game [!] (1992)\<br />
+      Interesting Game [!] (1992).zip</span></p>
+  </blockquote>
+  <p>&nbsp;</p>
+</div>
+<p><span class="CenteredBlue">Launcher Configuration</span></p>
+<p><span class="CenteredBlue"><u>Per-Game vs. Global</u></span></p>
+<p>Options for the console or game such as disabling extended monitors, Xpadder, JoyToKey, Daemon Tools and &quot;per-game&quot; settings are set prior to launcher-confuration. </p>
+<div>
+  <blockquote>
+    <p><span class="BUTTONLABEL">PER-GAME</span></p>
+  </blockquote>
+  <h3>Each rom uses a unique configuration file for its emulator. </h3>
+  <p class="CAVEATS">Paradigm: </p>
+  <p class="CAVEATS"> All settings, quick-saves, save-files &amp; snapshots for the emulator are saved in the rom-directory. </p>
+</div>
+<hr />
+<p class="CAVEATS"><strong>Caveats:</strong></p>
+<blockquote>
+  <p class="CAVEATS">Some consoles use the same emulator and these consoles should use either Per-Game or Global settings (not both). </p>
+  <p class="CAVEATS">E.G: Sega Genesis &amp; Sega Master System both use the Kega Fusion Emulator.</p>
+  <p class="CAVEATS"> Nintendo Gameboy &amp; Nintendo Gameboy Color both use the Mednafen Emulator.</p>
+</blockquote>
+<hr />
+<blockquote>
+  <p><span class="BUTTONLABEL">GLOBAL</span></p>
+</blockquote>
+<h3>All games using the assigned emulator use the same configuration file. </h3>
+<p class="CAVEATS">Paradigm:</p>
+<p class="CAVEATS"> All settings, quick-saves, save-files &amp; snapshots for the emulator are saved in locations set by the emulator in its default state and any changes made to emulator settings will propogate for all games using the emulator.</p>
+<p class="CAVEATS"><u>Per-Profile</u></p>
+<div class="TabbedPanelsContent">
+  <p class="CAVEATS"> When Xpadder is disabled, this menu will not appear. </p>
+  <p>Sometimes you may want to xpadder enabled to control your frontend, but disabled or load profiles that control an emulator's special functionality only when loading a rom or console. </p>
+  <div>
+    <blockquote>
+      <p><span class="BUTTONLABEL">Default</span></p>
+    </blockquote>
+    <h3>will create the default profiles for the game/console.</h3>
+    <p> <span class="CAVEATS">These profiles contain the default keyboard mappings as they correspond to the native <a href="#LAYOUT">joystick layout</a> for the emulator.</span></p>
+    <blockquote>
+      <p><span class="BUTTONLABEL">Blank</span></p>
+    </blockquote>
+    <h3>causes an empty profile to be created for this instance so that upon quitting an emulator, the profie used to control your frontend is then reloaded.</h3>
+    <p><span class="CAVEATS">This is desirable for users who are processing a console with a custom emulator.</span></p>
+    <blockquote>
+      <p><span class="BUTTONLABEL">Emu</span></p>
+    </blockquote>
+    <h3>causes a profile with the default associated Emulator's functionality to be created.</h3>
+    <p><span class="CAVEATS">This is desirable for users who are not using per-game/console configurations AND are  using directinput/xinput mappings but may want a profile to control emulator functions such as <em>reset, save/load state etc...</em></span></p>
+  </div>
+</div>
+<hr />
+<strong><span class="CAVEATS">The Paradigm:</span></strong>
+<blockquote>
+  <p class="CAVEATS"><strong>&quot;Processing&quot;</strong></p>
+  <p class="CAVEATS">After roms have been sorted they must be &quot;processed&quot;. &nbsp;Rom-Jacket will create a launcher, emulator-configuration file/s, and joystick profiles for each rom in your library. &nbsp;This processing may take several minutes depending on the size of your library. *mame, Atomiswave, Naomi, and many Sega Genesis, PCEngine/TurboGrafx 16/SuperGrafx and CPS-I/II/III games will be assigned nice names for your convienence.*</p>
+</blockquote>
+<p>&nbsp;</p>
+<blockquote>
+  <p class="CAVEATS"><strong>Launchers</strong></p>
+  <p class="CAVEATS">Generally, launchers follow this procedure:</p>
+  <blockquote>
+    <p class="CAVEATS">1. Defines the locations.</p>
+    <p class="CAVEATS">2. Overwrites the emulator's configuraion files with the rom's configurations.</p>
+    <p class="CAVEATS">3. Loads the rom's joystick profiles.</p>
+    <p class="CAVEATS">4. Defines the rom.</p>
+    <p class="CAVEATS">5. Launches the emulator against the rom and waits until the emulator exits.</p>
+    <blockquote>
+      <p class="CAVEATS"><strong>If you are launching through a RJ-Enabled Frontend</strong>:</p>
+      <p class="CAVEATS">The Frontend will minimize and pause until the rom has exited and then unpause and restore itself.</p>
+    </blockquote>
+    <p class="CAVEATS">6. Copies the configuration files back to the rom's directory.</p>
+    <p class="CAVEATS">7. Reloads the joystick profile for the frontend.</p>
+    <p class="CAVEATS">8. Terminates the launcher.</p>
+  </blockquote>
+</blockquote>
+<p class="CAVEATS"><strong>Caveats:</strong></p>
+<blockquote>
+  <p class="CAVEATS">Large Libraries may take a LONG time to process. </p>
+</blockquote>
+<p>&nbsp;</p>
+<p class="CAVEATS">&nbsp;</p>
+</body>
+</html>

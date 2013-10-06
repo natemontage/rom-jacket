@@ -1,0 +1,33 @@
+<RomCollection id="[EMUNUM]" name="[CONS]">
+      <emulatorCmd>[BATCHLPTH]</emulatorCmd>
+      <emulatorParams>"%ROM%"</emulatorParams>
+      <romPath>[CONSPTH]\*.bat</romPath>
+      <saveStatePath />
+      <saveStateParams />
+      <mediaPath type="boxfront">[CONSPTH]\%GAME%\Folder.*</mediaPath>
+      <mediaPath type="boxback">[CONSPTH]\%GAME%\back.*</mediaPath>
+      <mediaPath type="cartridge">[CONSPTH]\%GAME%\cart.*</mediaPath>
+      <mediaPath type="screenshot">[CONSPTH]\%GAME%\.Snaps\screenshot.*</mediaPath>
+      <mediaPath type="action">[CONSPTH]\%GAME%\.Snaps\action.*</mediaPath>
+      <mediaPath type="title">[CONSPTH]\%GAME%\Banner.*</mediaPath>
+      <mediaPath type="fanart">[CONSPTH]\%GAME%\Backdrop.*</mediaPath>
+      <mediaPath type="gameplay">[CONSPTH]\%GAME%\trailerS\*.mp4</mediaPath>
+      <preCmd />
+      <postCmd />
+      <useEmuSolo>False</useEmuSolo>
+      <usePopen>False</usePopen>
+      <ignoreOnScan>False</ignoreOnScan>
+      <allowUpdate>True</allowUpdate>
+      <autoplayVideoMain>True</autoplayVideoMain>
+      <autoplayVideoInfo>True</autoplayVideoInfo>
+      <useboxfrontnameAsGamename>False</useboxfrontnameAsGamename>
+      <maxboxfrontDepth>99</maxboxfrontDepth>
+      <doNotExtractZipFiles>True</doNotExtractZipFiles>
+      <diskPrefix>_Disk</diskPrefix>
+      <imagePlacingMain>gameinfobig</imagePlacingMain>
+      <imagePlacingInfo>gameinfosmall</imagePlacingInfo>
+      <scraper name="thegamesdb.net" replaceKeyString="" replaceValueString="" />
+      <scraper name="archive.vg" replaceKeyString="" replaceValueString="" />
+      <scraper name="mobygames.com" replaceKeyString="" replaceValueString="" />
+</RomCollection>
+	

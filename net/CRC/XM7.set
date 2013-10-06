@@ -1,0 +1,17 @@
+Boot_bas.rom: C70F0C74:
+Boot_dos.rom: 198614FF:
+DicRom.rom: B142ACBC:
+ExtSub.rom: 0F7FCCE3:
+Fbasic30.rom: A96D19B6:
+fddseek.wav: 842C3648:
+Initiate.rom: 785CB06C:
+KANJI [a].ROM: FE8F63B0:
+Kanji.rom: 62402AC9:
+Kanji2.rom: 38644251:
+relayoff.wav: 3BFA43CF:
+relay_on.wav: 8A6257D9:
+SubsysCg.rom: E9F16C42:
+Subsys_a.rom: E8014FBB:
+Subsys_b.rom: 9BE69FAC:
+Subsys_c.rom: 24CEC93F:
+Userdic.dat: B4293435:

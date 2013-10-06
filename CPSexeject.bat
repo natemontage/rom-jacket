@@ -1,0 +1,1 @@
+REM "%GBC%\fart.exe" "%GBC%\net\%EXECT%\%CPS%\fba.ini" [ROMPTH] "%GBG%\%GAM%\%CONS%\%CPS%\SOURCE"

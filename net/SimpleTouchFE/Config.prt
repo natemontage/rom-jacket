@@ -1,0 +1,11 @@
+[Game]
+DisplayName=[ROMN]
+Program=[ROMPTH]\[BAT]
+Parameters=
+Wait=1
+Image=[IMGPTH]\[IMG]
+PreGameProgram=
+HidePreProgram=1
+Launch2=0
+UseKillFunction=0
+UseStartFunction=0

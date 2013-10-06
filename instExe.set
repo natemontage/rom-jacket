@@ -1,0 +1,14 @@
+for /f "delims=" %%a in ('Wfolder.exe "SET DESTNZ=" "" "Destination for Installation" /noquote') do %%a
+for %%A in ("%DESTN%") do set DESTNB=%%~nA
+for %%A in ("%DESTN%") do set DESTNP=%%~dpA
+for %%A in ("%DESTNZ%") do set DESTN=%DESTNP:~0,-1%
+if "%DESTN%"=="" goto :CANCELLED
+mkdir "%DEST%\[ROMN]"
+for /f "tokens=* delims= " %%a in ('dir /b /a-d "%CD%"') do copy /y "%%~a" "%DEST%\[ROMN]"
+call "injExeTmpl.bat"
+if "%DESTN%"=="" xxmklink.exe "%CD%\[ROMN].lnk" "%CD%\[ROMN].bat" "" "%CD%" GameExecutable 7 "%CD%\Folder.ico"
+if "%DESTN%" NEQ "" xxmklink.exe "%DESKTOPDIR%\[ROMN].lnk" "%DEST%\[ROMN].bat" "" "%DEST%" GameExecutable 7 "%DEST%\Folder.ico"
+exit /b
+
+:CANCELLED
+set CANCL=1

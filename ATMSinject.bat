@@ -1,0 +1,1 @@
+"%GBC%\fart.exe" "%DMUL%.ini" [ROMPTH] "%GBG%\%GAM%\%CONS%\%ATMS%\%CSTM%"

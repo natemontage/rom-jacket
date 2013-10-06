@@ -1,0 +1,8 @@
+BOOT.ROM: 72BDF532:
+cgrom.dat: 9F3195F1:
+iplrom.dat: 72BDF532:
+keyconf.dat: DB9B5DB0:
+SRAM.RAM: AF3B5C44:
+X68000 IPL CG Rom (1987)(Sharp)[dat].dat: 3B385EEC:
+X68000 SRAM (1987)(Sharp)[dat].dat: 5EDC1E7B:
+X68000 SRAM (1987)(Sharp)[ram].ram: B809D38A:

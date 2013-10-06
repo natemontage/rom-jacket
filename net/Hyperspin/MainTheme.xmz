@@ -1,0 +1,26 @@
+<Theme>
+    <video w="343.8"
+           h="282.8"
+           x="211"
+           y="152"
+           r="0"
+           rx="0"
+           ry="0"
+           below="false"
+           overlaybelow="false"
+           overlayoffsetx="0"
+           overlayoffsety="0"
+           forceaspect="none"
+           time="2"
+           delay="0"
+           bsize="3"
+           bsize2="4"
+           bsize3="2"
+           bcolor="3628899"
+           bcolor2="3628899"
+           bcolor3="0"
+           bshape="round"
+           type="tv"
+           start="top"/>
+           rest="none"/>
+</Theme>

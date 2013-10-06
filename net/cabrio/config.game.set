@@ -1,0 +1,26 @@
+<game>
+        <name>[ROM]</name>
+        <rom-image>[ROMPTH]</rom-image>
+        <platform>[EMUL]</platform>
+		<images>
+		<image>
+		<type>background</type>
+            <image-file>[FANART]</image-file>
+			</image>
+          <image>
+            <type>logo</type>
+            <image-file>[FOLDER]</image-file>
+          </image>
+          <image>
+            <type>screenshot</type>
+            <image-file>[SNAP]</image-file>
+          </image>
+        </images>
+        <video>[TRAILER]</video>
+		<categories>
+          <category>
+            <name>Platform</name>
+            <value>[EMUL]</value>
+          </category>
+        </categories>
+      </game>

@@ -1,0 +1,6 @@
+[FILENAMES]
+Exe="[DESTN]\[ROMN].exe"
+SaveAs="[DESTN]\[ROMN].exe"
+
+[COMMANDS]
+-addoverwrite "[ICOLOC]", ICONGROUP,MAINICON,0

@@ -1,0 +1,10 @@
+dc_boot.bin: 89F2B1A1:
+dc_flash (Eu-Pal)[a].rom: 00A8638B:
+dc_flash (Jp-Ntsc)[a2].rom: 8AF98E26:
+dc_flash.bin: C611B498:
+dc_flash_wb.bin: F0586D6A:
+dc_nvmem.bin: 098A0CBE:
+fsca-table.bin: 5D905DE4:
+Sega Dreamcast BIOS Flash (US - HKT-3020).bin: BDA0E9AA:
+vmu_default.bin: 7EFC7372:
+dc_flash.bin: FA297C5B:

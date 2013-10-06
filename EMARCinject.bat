@@ -1,0 +1,1 @@
+"%GBC%\fart.exe" [ROMPTH] "%GBG%\%GAM%\%CONS%\%EMARC%\%CSTM%"
